@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@theme{
+    --color-primary:#826F66;
+    --color-background:#252b42;
+    --color-hover:teal;
+    --color-foreground:#ffffff;
+    --color-card-foreground:#000000;
+    --color-muted-foreground:#737373;
+
+    --font-montserrat:"montserrat", "sans-serif";
+
+    --breakpoint-xs:460px;
+}
+@layer base{
+    h1{
+        font-size:2.5rem;
+    }
+    button{
+       cursor:pointer; 
+    }
+}
+
+@utility test{
+    border:1px solid red;
+}
+@utility container{
+    @apply mx-auto;
+}
