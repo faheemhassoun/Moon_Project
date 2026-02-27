@@ -645,6 +645,24 @@
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
+  .pt-\[10px\] {
+    padding-top: 10px;
+  }
+  .pt-\[40px\] {
+    padding-top: 40px;
+  }
+  .pt-\[50px\] {
+    padding-top: 50px;
+  }
+  .pt-\[60px\] {
+    padding-top: 60px;
+  }
+  .pt-\[80px\] {
+    padding-top: 80px;
+  }
+  .pt-\[110px\] {
+    padding-top: 110px;
+  }
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
   }
@@ -799,6 +817,9 @@
   .text-\[\#FFFDFB\] {
     color: #FFFDFB;
   }
+  .text-\[gray-700\] {
+    color: gray-700;
+  }
   .text-gray-300 {
     color: var(--color-gray-300);
   }
@@ -869,6 +890,10 @@
   .duration-600 {
     --tw-duration: 600ms;
     transition-duration: 600ms;
+  }
+  .duration-700 {
+    --tw-duration: 700ms;
+    transition-duration: 700ms;
   }
   .duration-1000 {
     --tw-duration: 1000ms;
