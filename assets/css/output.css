@@ -25,6 +25,8 @@
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-md: 28rem;
+    --container-xl: 36rem;
     --container-2xl: 42rem;
     --container-7xl: 80rem;
     --text-xs: 0.75rem;
@@ -337,6 +339,9 @@
   .h-\[40px\] {
     height: 40px;
   }
+  .h-\[60vh\] {
+    height: 60vh;
+  }
   .h-\[70vh\] {
     height: 70vh;
   }
@@ -408,6 +413,12 @@
   }
   .max-w-\[1440px\] {
     max-width: 1440px;
+  }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
   }
   .flex-1 {
     flex: 1;
@@ -663,11 +674,21 @@
   .text-\[18px\] {
     font-size: 18px;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-\[24px\] {
     font-size: 24px;
   }
+  .text-\[28px\] {
+    font-size: 28px;
+  }
   .text-\[30px\] {
     font-size: 30px;
+  }
+  .leading-relaxed {
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -970,6 +991,11 @@
       display: inline;
     }
   }
+  .sm\:h-\[80vh\] {
+    @media (width >= 40rem) {
+      height: 80vh;
+    }
+  }
   .sm\:h-\[250px\] {
     @media (width >= 40rem) {
       height: 250px;
@@ -1066,9 +1092,19 @@
       font-size: 18px;
     }
   }
+  .sm\:text-\[20px\] {
+    @media (width >= 40rem) {
+      font-size: 20px;
+    }
+  }
   .sm\:text-\[22px\] {
     @media (width >= 40rem) {
       font-size: 22px;
+    }
+  }
+  .sm\:text-\[24px\] {
+    @media (width >= 40rem) {
+      font-size: 24px;
     }
   }
   .sm\:text-\[30px\] {
@@ -1134,6 +1170,16 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:h-\[50vh\] {
+    @media (width >= 48rem) {
+      height: 50vh;
+    }
+  }
+  .md\:h-\[60vh\] {
+    @media (width >= 48rem) {
+      height: 60vh;
     }
   }
   .md\:h-\[348px\] {
@@ -1243,6 +1289,11 @@
       font-size: 15px;
     }
   }
+  .md\:text-\[16px\] {
+    @media (width >= 48rem) {
+      font-size: 16px;
+    }
+  }
   .md\:text-\[18px\] {
     @media (width >= 48rem) {
       font-size: 18px;
@@ -1332,6 +1383,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -1373,6 +1428,7 @@
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-outline-style: solid;
