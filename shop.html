@@ -13,8 +13,8 @@
 </head>
 <body>
 <header class="h-20.5 flex items-center">
-    <div class="container mx-auto px-6 md:px-0 lg:px-6 flex justify-between items-center">
-            <button class="md:hidden size-12 left-5">
+    <div class="container mx-auto px-4 flex justify-between items-center">
+            <button class="md:hidden">
       <i class="fa-solid fa-bars"></i>
     </button>
             <div class="logo max-md:absolute max-md:left-1/2 max-md:transform max-md:-translate-x-1/2">
@@ -44,10 +44,185 @@
                     <img class="cursor-pointer" src="./assets/img/Home Page/header/Shopping cart.svg"/>
                 </div>
         </div>
-        
 </header>
 <main>
+<section class="pb-10">
+  <div class="mx-auto px-8">
+    <div class="mt-8 mb-6">
+      <p class="text-[#807F86]">Home / Shop</p>
+    </div>
 
+    <div class="flex flex-col md:flex-row md:justify-between md:items-center mb-10">
+      <p class="font-semibold text-[#3A3845]">Showing 120 items</p>
+
+      <div class="hidden md:flex items-center gap-2 mt-4 md:mt-0">
+        <p class="font-small text-[#3A3845]">Sort by:</p>
+        <select class="px-3">
+          <option>Name</option>
+          <option>Price</option>
+        </select>
+      </div>
+    </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-10">
+  <div class="hidden sm:grid sm:grid-cols-4 md:grid-cols-2 lg:grid-cols-1 gap-6 auto-rows-min">
+
+  <div class="py-6 border-t border-[#807F86]">
+    <p class="font-semibold font-small text-[#3A3845] mb-4">Category</p>
+
+    <div class="text-[13px] text-[#374151]">
+      <label class="flex gap-2 mb-2 hover:text-red-600"><input type="checkbox">Dinnerware</label>
+      <label class="flex gap-2 mb-2 hover:text-red-600"><input type="checkbox">Ceramic</label>
+      <label class="flex gap-2 mb-2 hover:text-red-600"><input type="checkbox">Furniture</label>
+      <label class="flex gap-2 mb-2 hover:text-red-600"><input type="checkbox">Decor Art</label>
+      <label class="flex gap-2 mb-2 hover:text-red-600"><input type="checkbox">Gifts sets</label>
+    </div>
+  </div>
+
+  <div class="py-6 border-t border-[#807F86]">
+    <p class="font-semibold font-small text-[#3A3845] mb-4">Price Range</p>
+
+    <div class="text-[13px] text-[#374151]">
+      <label class="flex gap-2 mb-2 hover:text-red-600"><input type="checkbox">$0 - $10</label>
+      <label class="flex gap-2 mb-2 hover:text-red-600"><input type="checkbox">$10 - $50</label>
+      <label class="flex gap-2 mb-2 hover:text-red-600"><input type="checkbox">$50 - $100</label>
+      <label class="flex gap-2 mb-2 hover:text-red-600"><input type="checkbox">$100 - $200</label>
+      <label class="flex gap-2 mb-2 hover:text-red-600"><input type="checkbox">> $200</label>
+    </div>
+  </div>
+
+  <div class="py-6 border-t border-[#807F86]">
+    <p class="font-semibold font-small text-[#3A3845] mb-4">Color</p>
+
+    <div class="flex gap-4">
+      <p class="w-4 h-4 bg-[#ffff] border border-[#3A3845]"></p>
+      <p class="w-4 h-4 bg-[#C69B7B]"></p>
+      <p class="w-4 h-4 bg-[#CCD8CE]"></p>
+      <p class="w-4 h-4 bg-[#B4555D]"></p>
+      <p class="w-4 h-4 bg-[#9B92A1]"></p>
+    </div>
+  </div>
+
+  <div class="pt-6 border-t border-[#807F86]">
+    <p class="font-semibold font-small text-[#3A3845] mb-4">Tags</p>
+
+    <div class="text-[13px] text-[#374151]">
+      <label class="flex items-center gap-2 mb-2 hover:text-red-600"><input type="checkbox">Dinnerware</label>
+      <label class="flex items-center gap-2 mb-2 hover:text-red-600"><input type="checkbox">Ceramic</label>
+      <label class="flex items-center gap-2 mb-2 hover:text-red-600"><input type="checkbox">Furniture</label>
+      <label class="flex items-center gap-2 mb-2 hover:text-red-600"><input type="checkbox">Decor Art</label>
+      <label class="flex items-center gap-2 mb-2 hover:text-red-600"><input type="checkbox">Gifts sets</label>
+    </div>
+  </div>
+</div>
+
+
+<!--products-->
+
+      <div class="grid grid-cols-1 min-[420px]:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-10">
+
+        <!-- product 1 -->
+        <div class="flex flex-col h-full max-sm:text-center border border-[#F7F6F5] bg-[#ffff] hover:bg-[#f1f0f5] hover:border-[#3A3845] transition duration-500">
+          <img src="./assets/img/Shop Page/1.png" class="w-full"/>
+          <div>
+            <p class="mt-4 text-[14px] font-semibold text-[#3A3845]">SMALL ECRU CERAMIC COMPOTE</p>
+            <p class="text-[14px] mt-1 font-semibold text-[#3A3845]">$49.00</p>
+            <p class="text-[12px] text-[#807F86] mt-2 pb-2.5">Lorem ipsum dolor sit amet conse bolli tetur adipiscing elit.</p>
+          </div>
+          <button class="mt-auto w-full py-2 border border-[#3A3845] text-[#3A3845] text-[12px] font-semibold hover:bg-gray-800 hover:text-green-500 transition duration-600">ADD TO CART</button>
+        </div>
+
+        <!-- product 2 -->
+        <div class="flex flex-col h-full max-sm:text-center border border-[#F7F6F5] bg-[#ffff] hover:bg-[#f1f0f5] hover:border-[#3A3845] transition duration-500">
+          <img src="./assets/img/Shop Page/2.png" class="w-full"/>
+          <div>
+            <p class="mt-4 text-[14px] font-semibold text-[#3A3845]">Warrick White Vase 14"</p>
+            <p class="text-[14px] mt-1 font-semibold text-[#3A3845]">$49.00</p>
+            <p class="text-[12px] text-[#807F86] mt-2 pb-2.5">Lorem ipsum dolor sit amet conse bolli tetur.</p>
+          </div>
+          <button class="mt-auto w-full py-2 border border-[#3A3845] text-[#3A3845] text-[12px] font-semibold hover:bg-gray-800 hover:text-green-500 transition duration-600">ADD TO CART</button>
+        </div>
+
+        <!-- product 3 -->
+        <div class="flex flex-col h-full max-sm:text-center border border-[#F7F6F5] bg-[#ffff] hover:bg-[#f1f0f5] hover:border-[#3A3845] transition duration-500">
+          <img src="./assets/img/Shop Page/3.png" class="w-full"/>
+          <div>
+            <p class="mt-4 text-[14px] font-semibold text-[#3A3845]">Porcelain Dinner Plate</p>
+            <p class="text-[14px] mt-1 font-semibold text-[#3A3845]">$68.00</p>
+            <p class="text-[12px] text-[#807F86] mt-2 pb-2.5">Lorem ipsum dolor sit amet conse.</p>
+          </div>
+          <button class="mt-auto w-full py-2 border border-[#3A3845] text-[#3A3845] text-[12px] font-semibold hover:bg-gray-800 hover:text-green-500 transition duration-600">ADD TO CART</button>
+        </div>
+
+        <!-- product 4 -->
+        <div class="flex flex-col h-full max-sm:text-center border border-[#F7F6F5] bg-[#ffff] hover:bg-[#f1f0f5] hover:border-[#3A3845] transition duration-500">
+          <img src="./assets/img/Shop Page/4.png" class="w-full"/>
+          <div>
+            <p class="mt-4 text-[14px] font-semibold text-[#3A3845]">Warrick White Vase 20"</p>
+            <p class="text-[14px] mt-1 font-semibold text-[#3A3845]">$49.00</p>
+            <p class="text-[12px] text-[#807F86] mt-2 pb-2.5">Lorem ipsum dolor sit amet conse.</p>
+          </div>
+          <button class="mt-auto w-full py-2 border border-[#3A3845] text-[#3A3845] text-[12px] font-semibold hover:bg-gray-800 hover:text-green-500 transition duration-600">ADD TO CART</button>
+        </div>
+
+        <!-- product 5 -->
+        <div class="flex flex-col h-full max-sm:text-center border border-[#F7F6F5] bg-[#ffff] hover:bg-[#f1f0f5] hover:border-[#3A3845] transition duration-500">
+          <img src="./assets/img/Shop Page/5.png" class="w-full"/>
+          <div>
+            <p class="mt-4 text-[14px] font-semibold text-[#3A3845]">Rounded Dual Handled Vase</p>
+            <p class="text-[14px] mt-1 font-semibold text-[#3A3845]">$79.00</p>
+            <p class="text-[12px] text-[#807F86] mt-2 pb-2.5">Lorem ipsum dolor sit amet conse.</p>
+          </div>
+          <button class="mt-auto w-full py-2 border border-[#3A3845] text-[#3A3845] text-[12px] font-semibold hover:bg-gray-800 hover:text-green-500 transition duration-600">ADD TO CART</button>
+        </div>
+
+        <!-- product 6 -->
+        <div class="flex flex-col h-full max-sm:text-center border border-[#F7F6F5] bg-[#ffff] hover:bg-[#f1f0f5] hover:border-[#3A3845] transition duration-500">
+          <img src="./assets/img/Shop Page/6.png" class="w-full"/>
+          <div>
+            <p class="mt-4 text-[14px] font-semibold text-[#3A3845]">Marin White Dinner Plate</p>
+            <p class="text-[14px] mt-1 font-semibold text-[#3A3845]">$49.00</p>
+            <p class="text-[12px] text-[#807F86] mt-2 pb-2.5">Lorem ipsum dolor sit amet conse.</p>
+          </div>
+          <button class="mt-auto w-full py-2 border border-[#3A3845] text-[#3A3845] text-[12px] font-semibold hover:bg-gray-800 hover:text-green-500 transition duration-600">ADD TO CART</button>
+        </div>
+
+        <!-- product 7 -->
+        <div class="flex flex-col h-full max-sm:text-center border border-[#F7F6F5] bg-[#ffff] hover:bg-[#f1f0f5] hover:border-[#3A3845] transition duration-500">
+          <img src="./assets/img/Shop Page/7.png" class="w-full"/>
+          <div>
+            <p class="mt-4 text-[14px] font-semibold text-[#3A3845]">Tall Cream Ceramic Vase</p>
+            <p class="text-[14px] mt-1 font-semibold text-[#3A3845]">$149.00</p>
+            <p class="text-[12px] text-[#807F86] mt-2 pb-2.5">Lorem ipsum dolor sit amet conse.</p>
+          </div>
+          <button class="mt-auto w-full py-2 border border-[#3A3845] text-[#3A3845] text-[12px] font-semibold hover:bg-gray-800 hover:text-green-500 transition duration-600">ADD TO CART</button>
+        </div>
+
+        <!-- product 8 -->
+        <div class="flex flex-col h-full max-sm:text-center border border-[#F7F6F5] bg-[#ffff] hover:bg-[#f1f0f5] hover:border-[#3A3845] transition duration-500">
+          <img src="./assets/img/Shop Page/8.png" class="w-full"/>
+          <div>
+            <p class="mt-4 text-[14px] font-semibold text-[#3A3845]">Luana Bowl</p>
+            <p class="text-[14px] mt-1 font-semibold text-[#3A3845]">$49.00</p>
+            <p class="text-[12px] text-[#807F86] mt-2 pb-2.5">Lorem ipsum dolor sit amet conse.</p>
+          </div>
+          <button class="mt-auto w-full py-2 border border-[#3A3845] text-[#3A3845] text-[12px] font-semibold hover:bg-gray-800 hover:text-green-500 transition duration-600">ADD TO CART</button>
+        </div>
+
+        <!-- product 9 -->
+        <div class="hidden md:flex flex-col h-full max-sm:text-center border border-[#F7F6F5] bg-[#ffff] hover:bg-[#f1f0f5] hover:border-[#3A3845] transition duration-500">
+          <img src="./assets/img/Shop Page/9.png" class="w-full"/>
+          <div>
+            <p class="mt-4 text-[14px] font-semibold text-[#3A3845]">Porcelain Bowl</p>
+            <p class="text-[14px] mt-1 font-semibold text-[#3A3845]">$49.00</p>
+            <p class="text-[12px] text-[#807F86] mt-2 pb-2.5">Lorem ipsum dolor sit amet conse.</p>
+          </div>
+          <button class="mt-auto w-full py-2 border border-[#3A3845] text-[#3A3845] text-[12px] font-semibold hover:bg-gray-800 hover:text-green-500 transition duration-600">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
 <footer class="bg-[#3A3845] w-full">
   <div class="px-6 md:px-12 lg:px-[165px] pt-12">
