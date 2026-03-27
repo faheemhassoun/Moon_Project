@@ -27,10 +27,13 @@
                         <a href="./index.html" class="nav-link">Home</a>
                     </li>
                     <li class="text-sm font-medium cursor-pointer hover:text-hover transition-colors">
-                        <a href="./shop.html" class="nav-link">Shop</a>
+                        <a href="./about.html" class="nav-link">About</a>
                     </li>
                     <li class="text-sm font-medium cursor-pointer hover:text-hover transition-colors">
-                        <a href="./about.html" class="nav-link">About</a>
+                        <a href="./blog.html" class="nav-link">Blog</a>
+                    </li>
+                    <li class="text-sm font-medium cursor-pointer hover:text-hover transition-colors">
+                        <a href="./shop.html" class="nav-link">Shop</a>
                     </li>
                     <li class="text-sm font-medium cursor-pointer hover:text-hover transition-colors">
                         <a href="./contact.html" class="nav-link">Contact</a>
@@ -93,17 +96,17 @@
           <i class="fa-solid fa-star"></i>
           <i class="fa-regular fa-star"></i>
           </div>
-          <span class="text-[#111827] font-small">(1256 Reviews)</span>
-          <span class="text-[#3A3845] font-small">Stock: <span class="text-[#C69B7B] font-small">In stock</span></span>
+          <p class="text-[#111827] font-small">(1256 Reviews)</p>
+          <p class="text-[#3A3845] font-small">Stock: <p class="text-[#C69B7B] font-small">In stock</p></p>
         </div>
 
         <div class="flex items-center gap-3 text-lg">
-          <span class="font-small text-[#3A3845]">$35</span>
-          <span class="line-through font-small text-[#9CA3AF]">$50</span>
+          <p class="font-small text-[#3A3845]">$35</p>
+          <p class="line-through font-small text-[#9CA3AF]">$50</p>
         </div>
 
         <div>
-          <span class="text-sm font-small text-[#3A3845] font-semibold">Color :<span class="text-[#826F66] font-small font-semibold">Blue</span></span>
+          <p class="text-sm font-small text-[#3A3845] font-semibold">Color :<p class="text-[#826F66] font-small font-semibold">Blue</p></p>
 
           <div class="flex gap-3 mt-3 mb-8">
             <div class="w-9 h-9 border-2 border-[#D1D5DB] bg-[#A1B8BE]"></div>
@@ -117,15 +120,15 @@
 
         <div class="flex gap-4">
           <div class="flex border">
-            <span class="px-4 py-2 text-[#A6A6A8] cursor-pointer">-</span>
-            <span class="px-6 py-2 font-small font-semibold text-[#3A3845]">1</span>
-            <span class="px-4 py-2 text-[#3A3845] cursor-pointer">+</span>
+            <p class="px-4 py-2 text-[#A6A6A8] cursor-pointer">-</p>
+            <p class="px-6 py-2 font-small font-semibold text-[#3A3845]">1</p>
+            <p class="px-4 py-2 text-[#3A3845] cursor-pointer">+</p>
           </div>
           <button class="bg-[#3A3845] text-[#FFFFFF] font-small font-semibold px-12 py-3 mr-6 text-sm flex-1 min-[320px]:px-4 hover:text-green-500 transition duration-600 ">ADD TO CART</button>
         </div>
 
         <div class="flex gap-3 mr-6">
-          <button class="border flex-1 py-3 text-sm font-small font-semibold hover:bg-[#3A3845] hover:text-green-500 transition duration-600">BUY NOW</button>
+          <a href="./cart.html" class="text-center border flex-1 py-3 text-sm font-small font-semibold hover:bg-[#3A3845] hover:text-green-500 transition duration-600">BUY NOW</a>
           <button class="border w-12 flex items-center justify-center hover:text-green-500 hover:bg-[#3A3845]  transition duration-600">
           <i class="fa-regular fa-heart"></i>
           </button>
@@ -134,25 +137,33 @@
         <div class="mt-4">
           <p class="text-sm font-small font-semibold mb-4">Share this:</p>
           <div class="flex gap-4 text-[#C69B7B]">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
+            <a href="https://www.facebook.com" target="_blank">
+              <i class="fa-brands fa-facebook-f cursor-pointer"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <i class="fa-brands fa-twitter cursor-pointer"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+              <i class="fa-brands fa-instagram cursor-pointer"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+              <i class="fa-brands fa-linkedin-in cursor-pointer"></i>
+            </a>
           </div>
         </div>
 
         <div class="mr-6 font-small font-semibold text-[#3A3845] border-t border-[#CAC9CF] mt-6">
           <div class="flex justify-between py-4 border-b border-[#CAC9CF]">
-            <span>Details</span>
-            <span>+</span>
+            <p>Details</p>
+            <p>+</p>
           </div>
           <div class="flex justify-between py-4 border-b border-[#CAC9CF]">
-            <span>Dimensions</span>
-            <span>+</span>
+            <p>Dimensions</p>
+            <p>+</p>
           </div>
           <div class="flex justify-between py-4 border-b border-[#CAC9CF]">
-            <span>Reviews</span>
-            <span>+</span>
+            <p>Reviews</p>
+            <p>+</p>
           </div>
         </div>
       </div>
@@ -208,7 +219,12 @@
         <button class="mt-auto w-full px-3 py-2 sm:px-5 sm:py-3 border border-[#3A3845] text-[#3A3845] text-[12px] sm:text-[12px] font-small font-semibold hover:bg-gray-800 hover:text-green-500 transition duration-600">ADD TO CART</button>
       </div>
       </div>
+      <div class="flex justify-end mt-6">
+      <a href="./cart.html" class="text-center font-small font-semibold bg-[#3A3845] text-[#ffff] px-6 py-3 w-full md:w-auto hover:bg-[#a79292] transition duration-700">
+      Continue to cart
+      </a>
       </div>
+    </div>
 </section>
 </main>
 <footer class="bg-[#3A3845] w-full">
