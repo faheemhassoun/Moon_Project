@@ -422,6 +422,9 @@
   .h-\[250px\] {
     height: 250px;
   }
+  .h-\[300px\] {
+    height: 300px;
+  }
   .h-\[348px\] {
     height: 348px;
   }
@@ -581,6 +584,9 @@
   .gap-15 {
     gap: calc(var(--spacing) * 15);
   }
+  .gap-\[60px\] {
+    gap: 60px;
+  }
   .space-y-2 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -660,6 +666,9 @@
   .border-\[\#F7F6F5\] {
     border-color: #F7F6F5;
   }
+  .border-\[gray-300\] {
+    border-color: gray-300;
+  }
   .border-black {
     border-color: var(--color-black);
   }
@@ -674,6 +683,12 @@
   }
   .bg-\[\#3A3845\] {
     background-color: #3A3845;
+  }
+  .bg-\[\#6B6B6B\] {
+    background-color: #6B6B6B;
+  }
+  .bg-\[\#7D8F69\] {
+    background-color: #7D8F69;
   }
   .bg-\[\#9B92A1\] {
     background-color: #9B92A1;
@@ -690,8 +705,14 @@
   .bg-\[\#A7B2A3\] {
     background-color: #A7B2A3;
   }
+  .bg-\[\#B76E79\] {
+    background-color: #B76E79;
+  }
   .bg-\[\#B4555D\] {
     background-color: #B4555D;
+  }
+  .bg-\[\#C4A484\] {
+    background-color: #C4A484;
   }
   .bg-\[\#C69B7B\] {
     background-color: #C69B7B;
@@ -701,6 +722,9 @@
   }
   .bg-\[\#CCD8CE\] {
     background-color: #CCD8CE;
+  }
+  .bg-\[\#D9D9D9\] {
+    background-color: #D9D9D9;
   }
   .bg-\[\#DCB9A8\] {
     background-color: #DCB9A8;
@@ -758,6 +782,9 @@
   }
   .px-30 {
     padding-inline: calc(var(--spacing) * 30);
+  }
+  .px-\[120px\] {
+    padding-inline: 120px;
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -830,6 +857,9 @@
   }
   .pb-8 {
     padding-bottom: calc(var(--spacing) * 8);
+  }
+  .pb-9 {
+    padding-bottom: calc(var(--spacing) * 9);
   }
   .pb-10 {
     padding-bottom: calc(var(--spacing) * 10);
@@ -1081,10 +1111,24 @@
       }
     }
   }
+  .hover\:bg-\[\#434246\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #434246;
+      }
+    }
+  }
   .hover\:bg-\[\#CAC9CF\] {
     &:hover {
       @media (hover: hover) {
         background-color: #CAC9CF;
+      }
+    }
+  }
+  .hover\:bg-\[\#\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #;
       }
     }
   }
@@ -1106,6 +1150,20 @@
     &:hover {
       @media (hover: hover) {
         background-color: #f1f0f5;
+      }
+    }
+  }
+  .hover\:bg-\[gray-200\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: gray-200;
+      }
+    }
+  }
+  .hover\:bg-gray-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-200);
       }
     }
   }
@@ -1272,6 +1330,11 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
+  .min-\[420px\]\:grid-cols-3 {
+    @media (width >= 420px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
   .min-\[420px\]\:px-6 {
     @media (width >= 420px) {
       padding-inline: calc(var(--spacing) * 6);
@@ -1280,6 +1343,11 @@
   .xs\:mb-3 {
     @media (width >= 460px) {
       margin-bottom: calc(var(--spacing) * 3);
+    }
+  }
+  .xs\:px-4 {
+    @media (width >= 460px) {
+      padding-inline: calc(var(--spacing) * 4);
     }
   }
   .xs\:px-8 {
@@ -1362,9 +1430,24 @@
       height: 300px;
     }
   }
+  .sm\:h-\[350px\] {
+    @media (width >= 40rem) {
+      height: 350px;
+    }
+  }
+  .sm\:w-full {
+    @media (width >= 40rem) {
+      width: 100%;
+    }
+  }
   .sm\:w-px {
     @media (width >= 40rem) {
       width: 1px;
+    }
+  }
+  .sm\:grid-cols-1 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
   .sm\:grid-cols-2 {
@@ -1573,6 +1656,11 @@
       height: 640px;
     }
   }
+  .md\:h-auto {
+    @media (width >= 48rem) {
+      height: auto;
+    }
+  }
   .md\:h-full {
     @media (width >= 48rem) {
       height: 100%;
@@ -1616,6 +1704,11 @@
   .md\:w-full {
     @media (width >= 48rem) {
       width: 100%;
+    }
+  }
+  .md\:grid-cols-1 {
+    @media (width >= 48rem) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
     }
   }
   .md\:grid-cols-2 {
@@ -1765,6 +1858,12 @@
       font-size: 36px;
     }
   }
+  .md\:font-semibold {
+    @media (width >= 48rem) {
+      --tw-font-weight: var(--font-weight-semibold);
+      font-weight: var(--font-weight-semibold);
+    }
+  }
   .lg\:col-span-2 {
     @media (width >= 64rem) {
       grid-column: span 2 / span 2;
@@ -1795,9 +1894,19 @@
       grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
+  .lg\:grid-cols-\[260px\] {
+    @media (width >= 64rem) {
+      grid-template-columns: 260px;
+    }
+  }
   .lg\:grid-cols-\[260px_1fr\] {
     @media (width >= 64rem) {
       grid-template-columns: 260px 1fr;
+    }
+  }
+  .lg\:px-6 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 6);
     }
   }
   .lg\:px-\[115px\] {
